@@ -7,12 +7,14 @@ import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 
 /**
+ * mvn zest-generator:generate
+ *
  * @author Jiang Xu
  */
-@Mojo(name = "generate", defaultPhase = LifecyclePhase.TEST)
+@Mojo(name = "generate")
 public class ZestGenerator extends AbstractMojo {
 
     public void execute() throws MojoExecutionException, MojoFailureException {
-
+        getLog().info("Jiang Xu");
     }
 }
